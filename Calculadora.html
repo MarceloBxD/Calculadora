@@ -8,54 +8,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="calc">
-        <div id="resultado">
-            <p>0</p>
-            </div>
+
+    <div class="background">
+        <h1>Marcelo Bracet</h1>
+        
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
             <table>
                 <tr>
-                    <td class="botoesAcima">MC</td>
-                    <td class="botoesAcima">MR</td>
-                    <td class="botoesAcima">M+</td>
-                    <td class="botoesAcima">M-</td>
-                    </tr>
-                <tr>
-                    <td class="fundoCinza">%</td>
-                    <td class="fundoCinza">CE</td>
-                    <td class="fundoCinza">C</td>
-                    <td class="fundoCinza">DEL</td>
+                    <td><button onclick="del()" class="button">C</button></td>
+                    <td><button class="button" onclick="apagar()"><</button></td>
+                    <td><button class="button" onclick="insert('/')">/</button></td>
+                    <td><button class="button" onclick="insert('*')">X</button></td>
                 </tr>
                 <tr>
-                    <td class="fundoCinza">1/x</td>
-                    <td class="fundoCinza">x^2</td>
-                    <td class="fundoCinza">sqrt(x)</td>
-                    <td class="fundoCinza">/</td>
+                    <td><button class="button" onclick="insert('7')">7</button></td>
+                    <td><button class="button" onclick="insert('8')">8</button></td>
+                    <td><button class="button" onclick="insert('9')">9</button></td>
+                    <td><button class="button" onclick="insert('-')">-</button></td>
                 </tr>
                 <tr>
-                    <td class="fundoBranco">7</td>
-                    <td class="fundoBranco">8</td>
-                    <td class="fundoBranco">9</td>
-                    <td class="fundoCinza">X</td>
+                    <td><button class="button" onclick="insert('4')">4</button></td>
+                    <td><button class="button" onclick="insert('5')">5</button></td>
+                    <td><button class="button" onclick="insert('6')">6</button></td>
+                    <td><button class="button" onclick="insert('+')">+</button></td>
                 </tr>
                 <tr>
-                    <td class="fundoBranco">4</td>
-                    <td class="fundoBranco">5</td>
-                    <td class="fundoBranco">6</td>
-                    <td class="fundoCinza">-</td>
+                    <td><button class="button" onclick="insert('1')">1</button></td>
+                    <td><button class="button" onclick="insert('2')">2</button></td>
+                    <td><button class="button" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="button" onclick="calcular()" style="height: 106px;">=</button></td>
                 </tr>
                 <tr>
-                    <td class="fundoBranco">1</td>
-                    <td class="fundoBranco">2</td>
-                    <td class="fundoBranco">3</td>
-                    <td class="fundoCinza">Enter</td>
-                </tr>
-                <tr>
-                    <td class="fundoBranco">+/-</td>
-                    <td class="fundoBranco">0</td>
-                    <td class="fundoBranco">,</td>
-                    <td id="igual">=</td>
+                    <td colspan="2"><button class="button" onclick="insert('0')" style="width: 106px;">0</button></td>
+                    <td><button onclick="insert('.')" class="button">.</button></td>
                 </tr>
             </table>
         </div>
+
+    </div>
+
+<script src="script.js"></script>
 </body>
 </html>
